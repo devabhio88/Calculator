@@ -1,0 +1,79 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'gilroy',sans-serif;
+    scroll-behavior: smooth;
+
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+h1{
+    position: absolute;
+    color: white;
+    top: 4%;
+    font-size: 4rem;
+    font-weight: 100;
+    letter-spacing: 1.25rem;
+    border-bottom: #14CF93 solid 2px;
+}
+#calc{
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid#14CF93;
+    margin-top: 5%;
+    
+}
+#calc>form input{
+    width: 65px;
+    height:65px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    box-shadow: -7px -7px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.4);
+    background: transparent;
+    font-size: 15px;
+    color: black;
+    margin: 7px;
+    cursor: pointer;
+    transition: all ease 0.2;
+}
+form>.display{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0px;
+
+}
+form>.display>input{
+    text-align: right;
+    flex: 1;  
+    box-shadow: none;
+    font-size: 40px;
+}
+
+form input#equal{
+    width: 148px;
+}
+#calc>form input:active{
+    scale: 0.9;
+
+}
+#calc>form .function{
+    color: rgb(12, 9, 231);
+    font-weight: 500;
+}
